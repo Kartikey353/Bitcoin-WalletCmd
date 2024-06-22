@@ -6,10 +6,10 @@ const BIP32 = require('bip32');
 const ecc = require('tiny-secp256k1');
 const bitcoin = require('bitcoinjs-lib');
 const bip32 = BIP32.BIP32Factory(ecc);
-
+const cors = require('cors');
 const app = express();
 const port = 5000;
-
+app.use(cors());
 app.use(bodyParser.json());
 
 app.post('/importWallet', (req, res) => {
