@@ -1,0 +1,23 @@
+// commmand to create myWallet
+
+node wallet-manager.js create <name of wallet>
+
+// command to import myWallet 
+
+node wallet-manager.js import <name of wallet> "enter your mnemonic "
+
+// command to list all wallets
+
+node wallet-manager.js list 
+
+// commannd to shown wallet 
+
+node wallet-manager.js balance <name of wallet>
+
+// command to show transactions 
+
+node wallet-manager.js transactions <name of wallet> 
+
+// command to generate the address unused
+
+node wallet-manager.js generate-address <name of wallet>
